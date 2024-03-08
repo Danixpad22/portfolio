@@ -1,0 +1,43 @@
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #13182B;
+  font-family: dm sans,Arial, Helvetica, sans-serif
+}
+
+/*header*/
+
+.logo-img {
+  width: 100px;
+}
+.navbar {
+  background-color: #E9E9E9;
+}
+
+.nav-link {
+  font-size: 22px;
+}
+
+/*Main page*/
+.title-name {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 62px;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.title-info {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
