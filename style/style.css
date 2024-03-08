@@ -14,7 +14,7 @@ body {
 /*header*/
 
 .logo-img {
-  width: 100px;
+  width: 80px;
 }
 .navbar {
   background-color: #E9E9E9;
@@ -46,4 +46,22 @@ body {
 .img-profile {
   display: block;
   margin: 0 auto;
+  width: 250px; 
+  border-radius: 150px;
+}
+
+.about-me-text {
+font-size: 17px;
+color: white;
+
+}
+
+.about-me-title {
+  font-size: 24px;
+  background-color: #E9E9E9;
+  padding-left: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-radius: 7px;
 }
