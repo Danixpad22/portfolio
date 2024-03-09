@@ -61,7 +61,6 @@ body {
 .about-me-text {
 font-size: 17px;
 color: white;
-
 }
 
 .about-me-title {
@@ -72,4 +71,24 @@ color: white;
   padding-bottom: 5px;
   font-weight: bold;
   border-radius: 7px;
+}
+
+.my-skills-title {
+  font-size: 24px;
+  background-color: #E9E9E9;
+  padding-left: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.my-skylls-text{
+  font-size: 17px;
+  color: white;
+  line-height: 40px;
+  }
+
+.icon-skills {
+  width: 90px;
 }
