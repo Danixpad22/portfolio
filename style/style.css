@@ -58,29 +58,20 @@ body {
   border-radius: 150px;
 }
 
-.about-me-text {
+.title {
+  font-size: 24px;
+  background-color: #E9E9E9;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.about-me-text,
+.projects-text {
 font-size: 17px;
 color: white;
-}
-
-.about-me-title {
-  font-size: 24px;
-  background-color: #E9E9E9;
-  padding-left: 2px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-weight: bold;
-  border-radius: 7px;
-}
-
-.my-skills-title {
-  font-size: 24px;
-  background-color: #E9E9E9;
-  padding-left: 2px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-weight: bold;
-  border-radius: 7px;
 }
 
 .my-skills-text{
@@ -92,3 +83,49 @@ color: white;
 .icon-skills {
   width: 90px;
 }
+
+.icon-skills-bootstrap {
+  width: 90px;
+  padding-left: 10px;
+}
+
+.icon-projects {
+  width: 140px;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: #E9E9E9;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-icon {
+  width: 40px;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  color: rgb(33, 37, 41);
+}
+
+.copyright p {
+  margin: 0;
+  padding: 5px;
+}
+
+.social p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.social {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
