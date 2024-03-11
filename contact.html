@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>Daniele Padovani</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap" rel="stylesheet">
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init({
+            publicKey: "zktNMW2EaqQSoSdEF",
+          });
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // these IDs from the previous steps
+              emailjs.sendForm('service_3s62n8r', 'template_mvvz3cr', this)
+                  .then(() => {
+                      console.log('SUCCESS!');
+                  }, (error) => {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid p-2">
+            <a class="navbar-brand" href="#"><img class="logo-img" src="img/logo4.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarID">
+                <div class="navbar-nav">
+                    <a class="nav-link active pr-4" aria-current="page" href="index.html">About Me</a>
+                    <a class="nav-link active pr-4" aria-current="page" href="#">My Skills</a>
+                    <a class="nav-link active pr-4" aria-current="page" href="#">Projects</a>
+                      <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid pt-5 p-4">
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center flex-column">
+          <p class="title-name">Daniele<br>Padovani</p>
+          <p class="title-info">Software Developer</p>
+        </div>
+        <div class="col-md-3 pt-4">
+        </div>
+      </div>
+
+      <div class="row pt-3">
+        <div class="col-md-3 d-flex justify-content-center flex-column text-center">
+          <p class="contact-me-text">Contact me</p>
+          <img class="contact-img" src="icon/contact.svg" alt="contact">
+
+          
+          <form class="contact-form-css" id="contact-form">
+            <input type="hidden" name="contact_number" value="697483">
+            <input type="text" name="user_name" placeholder="Nome">
+            <input type="email" name="user_email" placeholder="Email">
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+      <div class="social">
+        <p>Follow me</p>
+        <a href="https://gist.github.com/Danixpad22" target="_blank"><img class="footer-icon" src="icon/github.svg" alt="Github"></a>
+        <a href="https://www.instagram.com/x_withmyeyes_x?igsh=MXJ0NXdsdHl6dDh0dw%3D%3D&utm_source=qr" target="_blank"><img class="footer-icon" src="icon/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/daniele-padovani-6318ba260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img class="footer-icon" src="icon/linkedin.svg" alt="Linkedin"></a>
+      </div>
+      <div class="copyright">
+        <p>© 2024 Copyright: Daniele Padovani</p>
+      </div>
+    </footer>
+    
+
+ 
+  
+    
+    </body>
+    </html>
