@@ -88,6 +88,7 @@ color: white;
 .icon-skills-bootstrap {
   width: 90px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .icon-projects {
@@ -143,13 +144,13 @@ color: white;
   flex-direction: column;
 }
 
-.form input {
+.contact-form-css input {
   margin-top: 5px;
   padding: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404);
 }
 
-.form textarea {
+.contact-form-css textarea {
   padding-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;

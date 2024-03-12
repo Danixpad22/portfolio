@@ -33,10 +33,24 @@
                       console.log('FAILED...', error);
                   });
           });
-      }
+      }      
   </script>
-
-
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm('service_3s62n8r', 'template_mvvz3cr', this)
+                .then(() => {
+                    console.log('SUCCESS!');
+                    // Reset the form fields
+                    this.reset();
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
 
 </head>
 <body>
@@ -49,9 +63,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarID">
                 <div class="navbar-nav">
-                    <a class="nav-link active pr-4" aria-current="page" href="index.html">About Me</a>
-                    <a class="nav-link active pr-4" aria-current="page" href="#">My Skills</a>
-                    <a class="nav-link active pr-4" aria-current="page" href="#">Projects</a>
+                    <a class="nav-link active pr-4" aria-current="page" href="index.html#about">About Me</a>
+                    <a class="nav-link active pr-4" aria-current="page" href="index.html#skills">My Skills</a>
+                    <a class="nav-link active pr-4" aria-current="page" href="index.html#projects">Projects</a>
                       <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                 </div>
             </div>
@@ -78,8 +92,8 @@
             <input type="hidden" name="contact_number" value="697483">
             <input type="text" name="user_name" placeholder="Nome">
             <input type="email" name="user_email" placeholder="Email">
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
+            <textarea name="message" placeholder="Contattami"></textarea>
+            <input type="submit" value="Invia">
           </form>
 
         </div>
