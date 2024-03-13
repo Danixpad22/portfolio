@@ -73,6 +73,7 @@ body {
 
 .about-me-text,
 .projects-text {
+text-align: justify;
 font-size: 17px;
 color: white;
 }
