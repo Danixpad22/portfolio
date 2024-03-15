@@ -56,9 +56,9 @@ body {
 .img-profile {
   display: block;
   margin: 0 auto;
-  width: 270px;
-  height: 270px;
-  border-radius: 150px;
+  width: 250px;
+  height: 250px;
+  border-radius: 145px;
 }
 
 .title {
