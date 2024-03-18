@@ -11,6 +11,13 @@ body {
   position: relative;
 }
 
+:root {
+  --secondary-color: #E9E9E9;
+  --text-color: #FFFFFF;
+}
+
+
+
 
 /*header*/
 
@@ -18,7 +25,7 @@ body {
   width: 80px;
 }
 .navbar {
-  background-color: #E9E9E9;
+  background-color: var(--secondary-color);
 }
 
 .nav-link {
@@ -35,7 +42,7 @@ body {
 
 /*Main page*/
 .title-name {
-  color: #ffffff;
+  color: var(--text-color);
   font-weight: bold;
   line-height: 62px;
   font-size: 60px;
@@ -44,7 +51,7 @@ body {
 
 .contact-me-text,
 .title-info {
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 20px;
 }
 
@@ -63,7 +70,7 @@ body {
 
 .title {
   font-size: 24px;
-  background-color: #E9E9E9;
+  background-color: var(--secondary-color);
   padding-left: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -75,12 +82,12 @@ body {
 .projects-text {
 text-align: justify;
 font-size: 17px;
-color: white;
+color: var(--text-color);
 }
 
 .my-skills-text{
   font-size: 17px;
-  color: white;
+  color: var(--text-color);
   line-height: 40px;
   }
 
@@ -101,7 +108,7 @@ color: white;
 /*Footer*/
 
 .footer {
-  background-color: #E9E9E9;
+  background-color: var(--secondary-color);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -167,7 +174,7 @@ color: white;
 
 .btn {
   margin: 0 auto;
-  background-color: #E9E9E9;
+  background-color: var(--secondary-color);
   font-size: 18px;
   font-weight: bold;
   width: 120px;
