@@ -16,6 +16,10 @@ body {
   --text-color: #FFFFFF;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 
@@ -105,6 +109,16 @@ color: var(--text-color);
   width: 140px;
 }
 
+.cvdown {
+  font-size: 20px;
+  color: var(--text-color)
+}
+
+.img-cv {
+  width: 60px;
+  padding-right: 20px;
+}
+
 /*Footer*/
 
 .footer {
@@ -178,4 +192,9 @@ color: var(--text-color);
   font-size: 18px;
   font-weight: bold;
   width: 120px;
+}
+
+#form-feedback {
+  margin-top: 16px;
+  color: var(--text-color);
 }
