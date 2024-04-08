@@ -96,18 +96,18 @@ color: var(--text-color);
   }
 
 .icon-skills {
-  width: 90px;
+  width: 70px;
 
 }
 
 .icon-skills-bootstrap {
-  width: 90px;
+  width: 70px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .icon-skills-js {
-  width: 95px;
+  width: 75px;
   padding-left: 10px;
   padding-right: 10px;
 }
